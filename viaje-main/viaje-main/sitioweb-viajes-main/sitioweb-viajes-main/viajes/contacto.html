@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Viajes</title>
+    <link rel="shortcut icon" href="imagenes/logo.webp" type="image/x-icon">
+</head>
+<body>
+    <!-- <a href="servicios.html">ir a sevicios</a>
+    <a href="servicios.html">
+        <img src="imagenes/logo.webp" width="5%">
+    </a> -->
+    <div style="display: flex; justify-content: center; gap: 10px;">
+     <a href="contacto.html">Contacto</a>
+     <a href="servicios.html">Servicios</a>
+     <a href="index.html">Inicio</a>
+    </div>
+    <div align="center">
+        <h1 style="color: rgb(8, 0, 252);">Conoce Nuestra Empresa</h1>
+        <p>Contactanos para tener el gusto de atenderte</p>
+        <!-- imagen -->
+        <img width="40%" src="imagenes/contacto.jpg" alt="Contactanos">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.736783662137!2d-75.64674702415354!3d6.1659929272127965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46810ad28b8f75%3A0x46e6f2b824827692!2sCl.%2024%20%2361a-2%20a%2061a-86%2C%20Itag%C3%BCi%2C%20Antioquia!5e0!3m2!1sen!2sco!4v1738080985328!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+        <form style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+            <label> Escriba su nombre</label>
+            <input required name="nombre del cliente" type="text" placeholder="Escriba en mayuscula"> <br>
+           
+            <label>Celular o telefono</label>
+            <input required name="telefono" type="tel" placeholder="Solo numeros"> <br>
+            
+            <label>Su edad</label>
+            <input required name="edad" type="number" min="18" max="80"> <br>
+            
+            <label>Correo electronico</label>
+            <input required name="correo" type="email" placeholder="email"> <br>
+            
+            <label>Fecha de nacimientito</label>
+            <input type="date"> <br>
+            
+            <label>Envia una foto:</label>
+            <input type="file" accept=".jpg, .png, .gif" max="3MB"><br>
+
+            <label>Genero:</label>
+            <input type="radio" name="Genero" value="Hombre"> Hombre
+            <input type="radio"name="Genero" value="Mujer"> Mujer
+            <input type="radio"name="Genero" value="Otro"> Otro
+            <input type="radio" name="Genero" value="prefiero no decirlo"> prefiero no decirlo <br>
+
+            <label>Escoje tu plan</label> 
+            <input type="checkbox" name="Plan" value="Pareja">Plan pareja
+            <input type="checkbox" name="Plan" value="Familiar">Plan Familiar
+            <input type="checkbox" name="Plan" value="Amigos">Plan Amigos
+            <input type="checkbox" name="Plan" value="Otro">Otro <br>
+            
+            <label>Selecciona una opcion de contacto</label>
+            <select name="contacto">
+                <option value="emal">Correo electronico</option>
+                <option value="telefono">telefono</option>
+                <option value="whatsapp">whatsapp</option>
+                <option value="Otro">Otro</option>
+            </select> <br>
+
+            <label>Mensaje:</label>
+            <textarea name="mensaje"></textarea> <br>
+            
+            <button type="submit">Enviar datos</button>
+            <button type="reset">Borrar datos</button>
+        </form>
+    </div>
+</body>
+</html>
